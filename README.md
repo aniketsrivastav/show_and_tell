@@ -1,6 +1,6 @@
 # Show and Tell: NIC
 
-Dependencies
+### Dependencies
 
 Run on Anaconda Prompt:
 
