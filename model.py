@@ -40,13 +40,13 @@ class CNNtoRNN(nn.Module):
         self.encoderCNN = EncoderCNN(embed_size)
         self.decoderRNN = DecoderRNN(embed_size, hidden_size, vocab_size, num_layers)
 
+    def caption_image(self, image, vocabulary, max_length=50):
+        result_caption = []
+    
     def forward(self, images, captions):
         features = self.encoderCNN(images)
         outputs = self.decoderRNN(features, captions)
         return outputs
-
-    def caption_image(self, image, vocabulary, max_length=50):
-        result_caption = []
 
         with torch.no_grad():
             x = self.encoderCNN(image).unsqueeze(0)
