@@ -1,10 +1,10 @@
 import torch
-from tqdm import tqdm
-import torch.nn as nn
 import torch.optim as optim
 import torchvision.transforms as transforms
 from torch.utils.tensorboard import SummaryWriter
 from get_dataloader import get_loader
+from tqdm import tqdm
+import torch.nn as nn
 from model import CNNtoRNN
 
 
@@ -53,7 +53,7 @@ def train():
     model.train()
 
     for epoch in range(num_epochs):
-        print("Epoch {}".format(epoch))
+  #      print("Epoch {}".format(epoch))
         for idx, (imgs, captions) in tqdm(
             enumerate(train_loader), total=len(train_loader), leave=False
         ):
