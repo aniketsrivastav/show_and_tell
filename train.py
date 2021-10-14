@@ -63,16 +63,11 @@ def train():
 
             outputs = model(imgs, captions[:-1])
             loss = criterion(
-                outputs.reshape(-1, outputs.shape[2]), captions.reshape(-1)
-            )
-
+                outputs.reshape(-1, outputs.shape[2]), captions.reshape(-1))
             writer.add_scalar("Training Loss", loss.item(), global_step=step)
             step += 1
-
             optimizer.zero_grad()
             loss.backward(loss)
             optimizer.step()
-
-
 if __name__ == "__main__":
     train()
