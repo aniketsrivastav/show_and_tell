@@ -9,7 +9,7 @@ def predict(model, device, dataset, img):
     transform = transforms.Compose(
         [transforms.Resize((299, 299)),
             transforms.ToTensor(),
-            transforms.Normalize((0.5, 0.5, 0.5), (0.5, 0.5, 0.5)),]
+            transforms.Normalize((0.50, 0.50, 0.50), (0.50, 0.50, 0.50)),]
                                     )
 
     model.eval()
