@@ -3,7 +3,7 @@ import torchvision.transforms as transforms
 from get_dataloader import get_loader
 from model import CNNtoRNN
 from PIL import Image
-
+## We can also use TorchGeo, it is a PyTorch domain library, similar to torchvision, that provides datasets, transforms, samplers, and pre-trained models specific to geospatial data.
 
 def predict(model, device, dataset, img):
     transform = transforms.Compose(
