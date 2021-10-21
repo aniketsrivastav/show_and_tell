@@ -6,7 +6,7 @@ import spacy  # for tokenizer
 import torch
 from torch.nn.utils.rnn import pad_sequence  # for padding
 from torch.utils.data import DataLoader, Dataset
-from PIL import Image  # Load img
+from PIL import Image  # Load image
 
 # Tokenizer
 spacy_eng = spacy.load("en")
