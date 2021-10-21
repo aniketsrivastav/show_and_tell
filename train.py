@@ -40,7 +40,7 @@ def train():
     writer = SummaryWriter("runs/flickr")
     step = 0
 
-    # initialize model, loss etc
+    # initialize model, loss etc.
     model = CNNtoRNN(embed_size, hidden_size, vocab_size, num_layers).to(device)
     criterion = nn.CrossEntropyLoss(ignore_index=dataset.vocab.stoi["<PAD>"])
     optimizer = optim.Adam(model.parameters(), lr=learning_rate)
