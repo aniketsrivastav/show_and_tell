@@ -18,3 +18,7 @@ https://www.kaggle.com/adityajn105/flickr8k
 
 The updated Kaggle notebook with BLEU score can be accessed here:
 https://www.kaggle.com/cyberrtrron/code
+
+### Bonus Content
+Zen of Python
+https://www.python.org/dev/peps/pep-0020/
