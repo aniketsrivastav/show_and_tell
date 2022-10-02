@@ -26,9 +26,9 @@ transform = transforms.Compose(
     )
 
 loader, dataset = get_loader(
-    "flickr8k/images/", "flickr8k/captions.txt", transform=transform
+    'flickr8k/images/', 'flickr8k/captions.txt', transform=transform
     )
-device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
+device = torch.device('cuda' if torch.cuda.is_available() else "cpu")
 
 model = CNNtoRNN(embed_size=256, hidden_size=256, vocab_size=len(dataset.vocab), num_layers=1).to(device)
-predict(model=model, device=device, dataset=dataset, img="img1.jpg")
+predict(model=model, device=device, dataset=dataset, img='img1.jpg')
