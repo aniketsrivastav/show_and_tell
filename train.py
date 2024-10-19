@@ -31,7 +31,7 @@ def train():
     # Hyperparameters
     num_layers = 1
     learning_rate = 3e-4
-    num_epochs = 10
+    num_epochs = 20
     embed_size = 256
     hidden_size = 256
     vocab_size = len(dataset.vocab)
