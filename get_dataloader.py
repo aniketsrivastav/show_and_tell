@@ -9,7 +9,7 @@ from torch.utils.data import DataLoader, Dataset
 from PIL import Image  # Load image
 
 # Tokenizer
-spacy_eng = spacy.load("en")
+spacy_eng = spacy.load("en") # english language
 
 
 class Vocabulary:
@@ -99,7 +99,7 @@ def get_loader(
         root_folder,
         annotation_file,
         transform,
-        batch_size=32,
+        batch_size=64,
         num_workers=8,
         shuffle=True,
         pin_memory=True,):
