@@ -8,7 +8,7 @@ GPU:    conda install pytorch torchvision torchaudio cudatoolkit=10.2 -c pytorch
 
 CPU only:    conda install pytorch torchvision torchaudio cpuonly -c pytorch
 
-# Install Python
+# Install Python -   Latest version (2024)
 
 https://www.python.org/downloads/
 
